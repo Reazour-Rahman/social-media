@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome-kit-link -->
+    <script src="https://kit.fontawesome.com/c2629e9dd3.js" crossorigin="anonymous"></script>
+    <title>Click Me</title>
+</head>
+<body>
+    <header>
+         <!-- navigation -->
+          <nav class="navbar navbar-expand-lg fs-6 mb--2 navbar-light container">
+            <div class="container-fluid active">
+              <!-- <img width="130" height="100" src="images/final.png" alt=""> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Forum</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Buy now !
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" tabindex="-1" >login/Join</a>
+                  </li>
+                </ul>
+                <!-- Moods -->
+                <div class="form-check form-switch">
+                  <input onclick="myFunction()" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Night Mood</label>
+                </div>
+                <!-- js for dark Mood -->
+                <script>
+                  function myFunction() {
+                     var element = document.body;
+                     element.classList.toggle("dark-mode");
+                  }
+                  </script>
+                <!-- social-icons -->
+                <div class="d-flex social-icons ">
+                    <a class="nav-link active" href=""><i class="fab fa-facebook-square"></i></a>
+                    <a class="nav-link active" href=""><i class="fab fa-instagram-square"></i></a>
+                    <a class="nav-link active" href=""><i class="fab fa-twitter-square"></i></a>
+                    <a class="nav-link active" href=""><i class="fab fa-vimeo-square"></i></a>
+                    <a class="nav-link active" href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <hr>
+          <!-- 2nd nav -->
+          <nav class="navbar navbar-expand-lg container fs-6 navbar-light">
+            <div class="container-fluid">
+              <img width="160" height="100" src="images/final.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Posts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      LifeStyle
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Components</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <button type="button" class="btn btn-danger">Subscribe</button>&nbsp;&nbsp;&nbsp;
+                  
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>&nbsp;&nbsp;&nbsp;
+                <!-- offcanvos -->
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-angle-double-left"></i></button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+  <!-- javascript cdn file link   -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

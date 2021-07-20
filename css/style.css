@@ -1,0 +1,21 @@
+/* Mood */
+body {
+    padding: 25px;
+    background-color: white;
+    
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: rgb(22, 22, 22);
+    color: white;
+  }
+
+/* social icons */
+.social-icons a{
+    font-size: 24px;
+}
+/* navigation hover */
+.nav-item:hover a {
+    color: blue !important;
+}
